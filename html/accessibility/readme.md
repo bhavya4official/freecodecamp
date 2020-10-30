@@ -1,7 +1,7 @@
 #Applied Accessibility
 
-div - groups content
+**div** - groups content
 
-section - groups related content
+**section** - groups related content
 
-article - groups independent, self-contained content
+**article** - groups independent, self-contained content
