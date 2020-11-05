@@ -1,4 +1,4 @@
-# Introduction to the CSS Flexbox Challenges
+# Introduction to the CSS Flexbox
 
 A website's User Interface ("UI") has two components. 
 First, there are the **visual elements** , such as colors, fonts, and images. 
