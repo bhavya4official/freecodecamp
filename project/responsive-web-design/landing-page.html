@@ -1,0 +1,113 @@
+<!-- Responsive Web Design Projects - Build a Product Landing Page -->
+
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <!-- metadata elements -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Landing Page</title>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      body {
+        box-sizing: border-box;
+        background-color: #eeeeee;
+        font-family: 'Lato', 'Lucida Grande', 'Lucida Sans Unicode', Tahoma, Sans-Serif;
+      }
+      header {
+        position: fixed;
+        top: 0;
+        width: 90%;
+        min-height: 75px;
+        padding: 0px 20px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #dddddd;
+      }
+      @media (max-width: 480px) {
+        header {
+        position: static;
+        }
+      }
+      footer {
+        background-color: #dddddd;
+        width: 90%;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- page contents -->
+    <header id="header">
+      <img src="" alt="Guitar logo" id="header-img" width="" height="">
+      <h1>Original Guitars</h1>
+      <nav id="nav-bar">
+        <a href="#features" class="nav-link">Features</a>
+        <a href="#glance" class="nav-link">Glance</a>
+        <a href="#pricing" class="nav-link">Princing</a>
+      </nav>
+    </header>
+    <article>
+      <section>
+      <h2>Handcrafted, home-made masterpieces</h2>
+      <form action="https://www.freecodecamp.com/email-submit" id="form">
+        <input type="email" id="email" placeholder="Enter your email address" required name="email">
+        <input type="submit" id="submit" value="GET STARTED">
+      </form>
+      </section>
+        
+      <section id="features">
+      <i class="fa fa-diamond" aria-hidden="true"></i>
+      <h2>Premium Materials</h2>
+      <p>Our Guitars use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.</p>
+      <i class="fa fa-truck" aria-hidden="true"></i>
+      <h2>Fast Shipping</h2>
+      <p>We make sure you recieve your guitar as soon as we have finished making it. We also provide free returns if you are not satisfied.</p>
+      <i class="fa fa-shield" aria-hidden="true"></i>
+      <h2>Quality Assurance</h2>
+      <p>For every purchase you make, we will ensure there are no damages or faults and we will check and test the tune of your instrument.</p>
+      </section>
+      <section id="glance">
+        <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/ZPGi2yBqdqw?autoplay=0&mute=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </secton>
+      <section id="pricing">
+        <div>
+          <h3>Basic</h3>
+          <ul>
+            <li>&#x20B9;1200</li>
+            <li>wooden</li>
+            <li>finished</li>
+          </ul>
+          <button>SELECT</button>
+        </div>
+        <div>
+          <h3>Advance</h3>
+          <ul>
+            <li>&#x20B9;1200</li>
+            <li>wooden</li>
+            <li>finished</li>
+          </ul>
+          <button>SELECT</button>
+        </div>
+        <div>
+          <h3>Pro</h3>
+          <ul>
+            <li>&#x20B9;1200</li>
+            <li>wooden</li>
+            <li>finished</li>
+          </ul> 
+          <button>SELECT</button>
+        </div>
+      </section>
+    </article>
+    <footer>
+      <ul>
+        <li>Privacy</li>
+        <li>Term</li>
+        <li>Contact</li>
+      </ul>
+      <p>Copyright 2020, Original Guitar</p>
+    </footer>
+  </body>
+</html>
