@@ -1,0 +1,345 @@
+<!-- Responsive Web Design Projects - Build a Product Landing Page -->
+
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <!-- metadata elements -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Landing Page</title>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Lato', 'Lucida Grande', 'Lucida Sans Unicode', Tahoma, Sans-Serif;
+      }
+      body {
+        background-color: #eeeeee;
+      }
+      header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        min-height: 75px;
+        padding: 0px 20px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #dddddd;
+      }
+      
+      #header-img {
+        width: 5vw;
+        min-width: 50px;
+        border-radius: 4px;
+      }
+      nav {
+        font-weight: 400;
+      }
+      nav > ul {
+        width: 35vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+      }
+      li {
+        list-style: none;
+      }
+      li > a {
+        color: #222;
+        text-decoration: none;
+      }
+      li > a:hover {
+        color: #000;
+      }
+      article {
+        margin: 0 auto;
+        max-width: 1000px;
+        width: 100%;
+      }
+      #hero {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 200px;
+        margin-top: 50px;
+      }
+      #hero input[type='email'] {
+        max-width: 275px;
+        padding: 5px;
+      }
+      #hero input[type='submit'] {
+        max-width: 150px;
+        height: 30px;
+        margin: 15px 0;
+        background-color: #f1c40f;
+      }
+      #hero input[type='submit']:hover {
+        background-color: #FF8C00;
+        cursor: pointer; 
+      }
+      .btn {
+    padding: 0 20px;
+    height: 40px;
+    font-size: 1em;
+    font-weight: 900;
+    text-transform: uppercase;
+    border: 0px black solid;
+    border-radius: 2px;
+    background: transparent;
+    cursor: pointer;
+      }
+      .btn:hover {
+        background-color: #FF8C00; 
+      }
+      .grid {
+        display: flex;
+      }
+      .icon {
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         height: 125px;
+         width: 20vw;
+         color: darkorange;
+      }
+      #features .desc {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 125px;
+        width: 80vw;
+        padding: 5px;
+      }
+      #how-it-works {
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+      }
+      #how-it-works > iframe {
+        max-width: 560px;
+        width: 100%;
+      }
+      #pricing {
+        margin-top: 60px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+      }
+      .product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: calc(100% / 3);
+    margin: 10px;
+    border: 1px solid #000;
+    border-radius: 3px;
+      }
+      .product > h3 {
+    background-color: #ddd;
+    color: black;
+    padding: 15px 0;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 700;
+      }
+      .product > ul > li:first-child {
+        font-weight: bold;
+      }
+      .product > ul {
+    margin: 15px 0;
+      }
+      .product > ul > li {
+    padding: 5px 0;
+      }
+      .product > button {
+    border: 0;
+    margin: 15px 0;
+    background-color: #f1c40f;
+    font-weight: 400;
+      }
+      
+            @media (max-width: 600px) {
+        header {
+          position: static;
+          flex-wrap: wrap;
+        }
+        header-img {
+          margin-top: 15px;
+          width: 100%;
+          position: relative;
+        }
+        nav {
+          margin-top: 10px;
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+          padding: 0 50px;
+        }
+        nav > ul {
+          flex-direction: column;
+        }
+        nav li {
+          padding-bottom: 5px;
+        }
+      }
+      @media (max-width: 550px) {
+        #features .icon {
+        display: none;
+        }
+      }
+      @media (max-width: 800px) {
+        #pricing {
+        flex-direction: column;
+        }
+        .product {
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+        }
+      }
+      footer {
+        background-color: #dddddd;
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 30px;
+        padding: 20px;
+      }
+      footer > ul {
+    display: flex;
+    justify-content: flex-end;
+      }
+      footer > ul > li {
+    padding: 0 10px;
+      }
+      footer > ul > li a {
+    color: #000;
+    text-decoration: none;
+      }
+      footer > p {
+    margin-top: 5px;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 0.9em;
+    color: #444;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- page contents -->
+    <header id="header">
+      <img src="https://images.pexels.com/photos/1010518/pexels-photo-1010518.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Guitar logo" id="header-img">
+      <h1>Original Guitars</h1>
+      <nav id="nav-bar">
+        <ul>
+          <li>
+            <a href="#features" class="nav-link">Features</a>
+          </li>
+          <li>
+            <a href="#glance" class="nav-link">Glance</a>
+          </li>
+          <li>
+            <a href="#pricing" class="nav-link">Princing</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <article>
+      <section id="hero">
+      <h2>Handcrafted, home-made masterpieces</h2>
+      <form action="https://www.freecodecamp.com/email-submit" id="form">
+        <input type="email" id="email" placeholder="Enter your email address" required name="email">
+        <input type="submit" id="submit" value="GET STARTED" class="btn">
+      </form>
+      </section>
+        
+      <section id="features">
+        <div class="grid">
+          <div class="icon">
+            <i class="fa fa-3x fa-diamond" aria-hidden="true"></i>
+          </div>
+          <div class="desc">
+          <h2>Premium Materials</h2>
+          <p>Our Guitars use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.</p>
+          </div>
+        </div>
+        <div class="grid">
+          <div class="icon">
+            <i class="fa fa-3x fa-truck" aria-hidden="true"></i>
+          </div>
+          <div class="desc">
+      <h2>Fast Shipping</h2>
+      <p>We make sure you recieve your guitar as soon as we have finished making it. We also provide free returns if you are not satisfied.</p>
+          </div>
+        </div>
+      
+        <div class="grid">
+          <div class="icon">
+            <i class="fa fa-3x fa-shield" aria-hidden="true"></i>
+          </div>
+          <div class="desc">
+      <h2>Quality Assurance</h2>
+      <p>For every purchase you make, we will ensure there are no damages or faults and we will check and test the tune of your instrument.</p>
+          </div>
+        </div>
+      </section>
+      
+      <section id="how-it-works">
+        <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/ZPGi2yBqdqw?autoplay=1&mute=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </section>
+      
+      <section id="pricing">
+        <div class="product">
+          <h3>Basic</h3>
+          <ul>
+            <li>&#x20B9;1200</li>
+            <li>wooden</li>
+            <li>finished</li>
+          </ul>
+          <button class="btn">SELECT</button>
+        </div>
+        <div class="product">
+          <h3>Advance</h3>
+          <ul>
+            <li>&#x20B9;1200</li>
+            <li>wooden</li>
+            <li>finished</li>
+          </ul>
+          <button class="btn">SELECT</button>
+        </div>
+        <div class="product">
+          <h3>Pro</h3>
+          <ul>
+            <li>&#x20B9;1200</li>
+            <li>wooden</li>
+            <li>finished</li>
+          </ul> 
+          <button class="btn">SELECT</button>
+        </div>
+      </section>
+    </article>
+    <footer>
+      <ul>
+        <li>
+          <a href="#">Privacy</a>
+        </li>
+        <li>
+          <a href="#">Term</a>
+        </li>
+        <li>
+          <a href="#">Contact</a>
+        </li>
+      </ul>
+      <p>Copyright 2020, Original Guitar</p>
+    </footer>
+  </body>
+</html>
