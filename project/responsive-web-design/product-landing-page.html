@@ -301,29 +301,29 @@
         <div class="product">
           <h3>Basic</h3>
           <ul>
-            <li>&#x20B9;1200</li>
+            <li>&#x20B9;3500</li>
             <li>wooden</li>
-            <li>finished</li>
+            <li>No Electronics</li>
           </ul>
-          <button class="btn">SELECT</button>
+          <button class="btn" onclick="basicFun()">SELECT</button>
         </div>
         <div class="product">
           <h3>Advance</h3>
           <ul>
-            <li>&#x20B9;1200</li>
-            <li>wooden</li>
-            <li>finished</li>
+            <li>&#x20B9;6500</li>
+            <li>Rosewood</li>
+            <li>ES-B</li>
           </ul>
-          <button class="btn">SELECT</button>
+          <button class="btn" onclick="advanceFun()">SELECT</button>
         </div>
         <div class="product">
           <h3>Pro</h3>
           <ul>
-            <li>&#x20B9;1200</li>
-            <li>wooden</li>
-            <li>finished</li>
+            <li>&#x20B9;9500</li>
+            <li>Mahogany</li>
+            <li>ES-2</li>
           </ul> 
-          <button class="btn">SELECT</button>
+          <button class="btn" onclick="proFun()">SELECT</button>
         </div>
       </section>
     </article>
@@ -341,5 +341,17 @@
       </ul>
       <p>Copyright 2020, Original Guitar</p>
     </footer>
+    
+    <script type="text/javascript">
+      function basicFun() {
+        alert("Basic grade selected.");  
+      }
+      function advanceFun() {
+        alert("Advance grade selected.");  
+      }
+      function proFun() {
+        alert("Pro grade selected.");  
+      }
+    </script>
   </body>
 </html>
